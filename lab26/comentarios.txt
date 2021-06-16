@@ -1,0 +1,21 @@
+inicializacção de data section "D" or "d"
+
+indefinido "U"
+
+o code estana seção de texto "T" ou "t"
+
+###########################
+
+gerou erro de tipo de variavel
+
+##########################
+
+"C"
+The symbol is common.  Common symbols are uninitialized data.  When linking, multiple common symbols may
+appear with the same name.  If the symbol is defined anywhere, the common symbols are treated as undefined
+references.
+
+###########################
+
+"B"
+o simbolo de que idica q exista mas não foi alocado pois é inicializado com 0

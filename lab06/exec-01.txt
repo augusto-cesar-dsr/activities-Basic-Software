@@ -1,0 +1,6 @@
+1º print = -1 pois inverte o sinal e soma mais 1
+2º print =  5 pois inverte o sinal e soma mais 1
+3º print = -35 pois inverte o sinal e soma mais 1
+4º print =  42 pois inverte o sinal e soma mais 1
+5º print = -127 pois inverte o sinal e soma mais 1
+6º print = -128 over flow pois não tem representação em positivos

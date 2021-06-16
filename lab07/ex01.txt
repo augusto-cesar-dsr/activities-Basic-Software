@@ -1,0 +1,2 @@
+0x000000FF essa admiti como certa
+0xFFFFFFFF porém deu isso, pois ele extende primeiro e depois retira o sinal

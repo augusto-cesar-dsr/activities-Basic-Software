@@ -1,0 +1,15 @@
+printa o endereço alocado e o numero truncado alocado dentro desse byte enderaçado em hexadecimal
+main 1º print = -3
+while 1º print = 0x100 - 0xFD
+while 2º print = 0x101 - 0xFF
+
+main 2º print = -151
+while 1º print = 0x100 - 0x69
+while 2º print = 0x101 - 0xFF
+while 3º print = 0x102 - 0xFF
+while 4º print = 0x103 - 0XFF
+
+main 3º print = 150 correção -106
+while 1º print = 0x100 - 0x0F correção 0x96
+
+esqueci do sinal de char

@@ -1,0 +1,36 @@
+
+nos proximos prints o programa chama a função dump para passando varx, e seu tamanho (sizeof(varx))
+onde ele vai printar o endereço de alocação byte a byte e seu conteudo iniciando com a variavel a
+e o mesmo acontece com b porem nele temos um padding de 2 bytes para ser multiplo de 4
+e o c acontece o mesmo q o a
+
+size of struct = 10 + 2 do dump para ser multiplo de 4
+
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+
+0-3 int
+4-5 short
+6-7 padding
+8-11 int
+
+print de a{
+    0x100 = 0xA4
+    0x101 = 0xA3
+    0x102 = 0xA2
+    0x103 = 0XA1
+}
+
+print de b{
+    0x104 = 0xB2
+    0x105 = 0xB1
+    0x106 = 0xlixo (julguei ser O SINAL)
+    0x109 = 0xlixo (julguei ser O SINAL)
+}
+
+print de a{
+    0x110 = 0xC4
+    0x111 = 0xC3
+    0x112 = 0xC2
+    0x113 = 0XC1
+}
+acertei

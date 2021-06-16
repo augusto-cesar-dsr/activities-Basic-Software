@@ -1,0 +1,37 @@
+
+nos proximos prints o programa chama a função dump para passando vary, e seu tamanho (sizeof(vary))
+onde ele vai printar o endereço de alocação byte a byte e seu conteudo iniciando com a variavel a escrevendo em todos os bytes
+e o b escrevendo apenas em 2 bytes
+e o c escrevendo apenas em um byte
+o resultado apresentado mostra q ele alterou no a os 4 bytes, no b os 2 bytes, no c apenas 1 byte
+tudo isso sem alterar o endereço de memoria que foram alocados, ouseja o espaço de memoria alocado é compartilhado
+
+size of union = 4 sendo o tamanho do int
+
+| 0 | 1 | 2 | 3 |
+
+0-3 int
+0-1 short
+0 char
+
+print de a{
+    0x100 = 0xA4
+    0x101 = 0xA3
+    0x102 = 0xA2
+    0x103 = 0XA1
+}
+
+print de b{
+    0x100 = 0xA2
+    0x101 = 0xA1
+    0x102 = 0xA2
+    0x103 = 0XA1
+}
+
+print de a{
+    0x100 = 0xC1
+    0x101 = 0xA1
+    0x102 = 0xA2
+    0x103 = 0XA1
+}
+acertei

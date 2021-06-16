@@ -1,0 +1,85 @@
+struct X {
+
+    int   a;
+
+    short b;
+
+    int   c;
+
+};
+
+
+
+// Cria a variável x e inicializa os campos da estrutura
+
+struct X x = {
+
+    .a = 2048,
+
+    .b = 17,
+
+    .c = 0xBebaCafe
+
+};
+
+#####################################################
+int main() {
+
+    char  *pChar; // cria um ponteiro para char
+
+    short *pShort; // cria um ponteiro para short
+
+
+
+    printf("x.a = %d\n", x.a); // printa o atual valor da variavel
+
+    printf("x.b = %d\n", x.b); // printa o atual valor da variavel
+
+    printf("x.c = %x\n", x.c); // printa o atual valor da variavel
+
+
+
+    printf("---\n");
+
+
+
+    pChar  = (char*)&x; // o ponteiro de char recebe o endereço do começo da struct x
+
+    pChar  = pChar + 4; // move a posição do endereço atual somando mais 4
+
+    *pChar = *pChar | 0x20; // pega a posição desse byte e faz um OU com 0x20, 
+    // ou seja, modifica o primeiro byte do short, tranformando ele em 49 = 0xffff
+
+
+
+    printf("x.a = %d\n", x.a); // printa o atual valor da variavel
+
+    printf("x.b = %d\n", x.b); // printa o atual valor da variavel
+
+    printf("x.c = %x\n", x.c); // printa o atual valor da variavel
+
+
+
+    printf("---\n");
+
+
+
+    pShort = (short*)&x; // o ponteiro de short recebe o endereço do começo da struct x
+
+    pShort[3] = 0xFFFF; // modifica a quarta posição do ponteiro de short, no endereço da struct que no caso é um short
+    // onde antes era o resultado de 17 | 0x20, para 0xFF
+    //Faltou na minha explicação nada acontece pois o local acessado é um padding
+
+
+
+    printf("x.a = %d\n", x.a); // printa o atual valor da variavel
+
+    printf("x.b = %d\n", x.b); // printa o atual valor da variavel
+
+    printf("x.c = %x\n", x.c); // printa o atual valor da variavel
+
+
+
+    return 0;
+
+}

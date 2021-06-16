@@ -1,0 +1,14 @@
+prog-01.c
+
+1º print : x = 4294967295, y = 2
+2º print : não
+
+prog-02.c
+
+1º print : x = -1, y = 2
+2º print : sim
+
+prog-03.c
+
+1º print : x = -1, y = 2
+2º print : não, pois o compilador olha todas as variáveis que estão sendo comparadas como sem sinal
